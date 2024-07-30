@@ -1,0 +1,357 @@
+body {
+    margin: 0px;
+    font-family: 'Noto Serif', serif;
+    background-color: #f9fafb;
+}
+
+.navgation {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: red;
+    z-index: 200;
+    clip-path: circle(25px at calc(100% - 45px) 40px);
+    transition: all 300ms ease-in-out;
+}
+
+.navgation.active {
+    clip-path: circle(75%);
+}
+
+.navgation .ham-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navgation .ham-btn span {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 2px;
+    background: white;
+    transition: all 200ms ease-in-out;
+}
+
+.navgation .ham-btn span:nth-child(1) {
+    top: 30%;
+}
+
+.navgation .ham-btn span:nth-child(2) {
+    top: 50%;
+}
+
+.navgation .ham-btn span:nth-child(3) {
+    top: 70%;
+}
+
+.navgation.active .ham-btn span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.navgation.active .ham-btn span:nth-child(2) {
+    display: none;
+}
+
+.navgation.active .ham-btn span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.navgation .links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.navgation .links a {
+    position: relative;
+    display: block;
+    margin: 20px 0px;
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.navgation .links a::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    height: 4px;
+    width: 0%;
+    background: white;
+    transition: all 300ms ease-in-out;
+}
+
+.navgation .links a:hover::after {
+    width: 100%;
+}
+
+.navgation .email h3 {
+    margin-top: 40px;
+}
+
+.navgation .email h3 {
+    font-size: 18px;
+    font-weight: 200;
+    color: white;
+}
+
+.navgation .icons i {
+    font-size: 25px;
+    color: white;
+    margin-top: 40px;
+}
+
+
+
+.navbar {
+    transition: all 0.5s;
+    background-color: red;
+    height: 70px;
+}
+
+.navbar-scrolled {
+    background-color: red;
+    height: 70px;
+}
+
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+}
+
+.text-up {
+    margin-top: 10%;
+    padding: 0px 50px;
+
+}
+
+.title-up {
+    margin-bottom: 22px;
+
+}
+
+.title-up h1 {
+    font-size: 50px;
+    color: #f00000;
+    justify-content: center;
+
+}
+
+.content-up p {
+    font-size: 28px;
+    justify-content: center;
+
+}
+
+.content-up a {
+    color: white;
+    font-style: italic;
+}
+
+.email-up a {
+    color: rgb(42, 5, 1);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.email-up a:hover {
+    color: red;
+}
+
+.form-section {
+    padding: 0px 50px;
+}
+
+.form-section input {
+    background-color: transparent;
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-radius: 0%;
+}
+
+.form-section input:hover {
+    background-color: transparent;
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid red;
+    border-radius: 0%;
+}
+
+.form-section input:focus {
+    box-shadow: none !important;
+    background-color: transparent;
+    border-bottom: 1px solid red;
+}
+
+.form-control {
+    background-color: transparent;
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-radius: 0%;
+}
+
+.form-control:hover {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid red;
+    border-radius: 0%;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    background-color: transparent;
+    border-bottom: 1px solid red;
+}
+
+.form-group {
+    margin-top: 30px;
+}
+
+.btn:hover {
+    box-shadow: none !important;
+    background-image: linear-gradient(270deg, #7b281a, #f00000);
+}
+
+.quote {
+    text-align: center;
+    padding: 20vw 20vw;
+
+}
+
+.quote h3 {
+    font-size: 60px;
+    color: #f00000;
+    justify-content: center;
+    font-style: italic;
+}
+
+.quote p {
+    font-size: 15px;
+    color: #f00000;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+.section-footer {
+    height: 35vh;
+    background-color: #f00000;
+    background-image: linear-gradient(270deg, #7b281a, #f00000);
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 4vw;
+    display: flex;
+    position: relative;
+}
+
+.footer-container {
+    width: 100%;
+    height: 100%;
+    max-width: 1600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.footer-contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+a {
+    max-width: 100%;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+}
+
+
+.footer-down {
+    width: 100%;
+    align-content: flex-start;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.footer-page-link {
+    flex-direction: column;
+    padding: 16px;
+    display: flex;
+
+}
+
+.footer-small-text.nohover {
+    margin-bottom: 8px;
+}
+
+.footer-small-text {
+    color: #f9fafb;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+.footer-social i {
+    width: 10px;
+}
+
+@media (max-width:700px) {
+
+    .text-up {
+        margin-top: 50%;
+    }
+
+    .title-up h1 {
+        font-size: 39px;
+    }
+
+    .content-up p,
+    a {
+        font-size: 17px;
+        font-family: sans-serif;
+        font-weight: 300;
+    }
+    .email-up a {
+        font-size: 16px;
+    }
+    .form-section {
+        padding: 20px;
+    }
+    .form-section input {
+        width: 100%;
+    }
+    .form-section textarea {
+        width: 100%;
+    }
+}
